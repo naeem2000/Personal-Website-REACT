@@ -1,0 +1,102 @@
+@import "../../global.scss";
+
+.experience {
+    background-color: lightgreen;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        padding-top: 50px;
+        
+
+        @include mobile {
+            font-size: 20px;
+            padding-top: 20px;
+        }
+    }
+    
+    .slider {
+        height: 60vh;
+        display: flex;
+        position: absolute;
+        left: 0;
+        padding-top: 85px;
+
+        @include mobile {
+            height: 75vh;
+            padding-top: 20px;
+        }
+
+        .container {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            @include mobile {
+                height: 100%;
+            }
+
+            .item {
+                width: 80%;
+                height: 100%;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                
+                @include mobile {
+                    width: 95%;
+                }
+
+                figure {
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px;
+                    
+
+                    @include mobile {
+                        padding: 5px;
+                    }
+
+                    progress[value] {
+
+                        @include mobile {
+                           width: 100px;
+                        }
+                      }
+
+                      
+
+                    figcaption {
+                        font-weight: 500;
+                        
+                        @include mobile {
+                            padding: 5px;
+                        }
+                    }
+                }
+                
+                @include mobile {
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                }
+                
+                img {
+                    width: 120px;
+
+                    @include mobile {
+                        width:75px;
+                    }
+                }
+            }
+        }
+    }
+}
