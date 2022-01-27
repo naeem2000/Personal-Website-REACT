@@ -46,24 +46,30 @@ export const page2Portfolio = [
     },
     {
         id: 2,
+        title: "Uchiha Madara",
+        img: "assets/madara.png",
+        Handle: "https://uchihamadara.netlify.app/"
+    },
+    {
+        id: 3,
         title: "Login Page Material-UI",
         img: "assets/login-page.png",
         Handle: "https://login-react-app-puma.netlify.app/"
     },
     {
-        id: 3,
+        id: 4,
         title: "Animated Car",
         img: "assets/animated-car.png",
         Handle: "https://animatedcarweb.netlify.app"
     },
     {
-        id: 4,
+        id: 5,
         title: "CV Builder Web App",
         img: "assets/online-cv-builder.png",
         Handle: "https://onlinecvtemplate.netlify.app"
     },
     {
-        id: 5,
+        id: 6,
         title: "Medi-Care Web App",
         img: "assets/medicare-webApp.png",
         Handle: "https://medi-care-front.netlify.app"
