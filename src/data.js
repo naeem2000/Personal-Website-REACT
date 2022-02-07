@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export const page1Portfolio = [
     {
         id: 1,
@@ -76,5 +75,3 @@ export const page2Portfolio = [
         Handle: "https://medi-care-front.netlify.app"
     }
 ];
-
->>>>>>> 24c0866329fb806beba474eadaa539ad3be47efc
