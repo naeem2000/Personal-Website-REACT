@@ -19,9 +19,6 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                 <li onClick={()=>setMenuOpen(false)}>
                     <a href="#contact">Contact</a>
                 </li>
-                <li onClick={()=>setMenuOpen(false)}>
-                    <a href="./assets/Curriculum Vitae of Mogamat Naeem Carr.pdf" download = "CV of Mogamat Naeem Carr.pdf"><i>Download my CV</i></a>
-                </li>
             </ul>
         </div>
     )

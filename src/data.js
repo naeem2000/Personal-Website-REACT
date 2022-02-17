@@ -25,9 +25,9 @@ export const page1Portfolio = [
     },
     {
         id: 5,
-        title: "To-do Web App",
-        img: "assets/to-do-webApp.png",
-        Handle: "https://to-do-webapp011.netlify.app"
+        title: "Job Listing",
+        img: "assets/job-listing.png",
+        Handle: "https://job-listing-39b59.web.app/"
     },
     {
         id: 6,
@@ -46,27 +46,27 @@ export const page2Portfolio = [
     },
     {
         id: 2,
-        title: "Uchiha Madara",
-        img: "assets/madara.png",
-        Handle: "https://uchihamadara.netlify.app/"
-    },
-    {
-        id: 3,
         title: "Login Page Material-UI",
         img: "assets/login-page.png",
         Handle: "https://login-react-app-puma.netlify.app/"
     },
     {
-        id: 4,
+        id: 3,
         title: "Animated Car",
         img: "assets/animated-car.png",
         Handle: "https://animatedcarweb.netlify.app"
     },
     {
-        id: 5,
+        id: 4,
         title: "CV Builder Web App",
         img: "assets/online-cv-builder.png",
         Handle: "https://onlinecvtemplate.netlify.app"
+    },
+    {
+        id: 5,
+        title: "To-do Web App",
+        img: "assets/to-do-webApp.png",
+        Handle: "https://to-do-webapp011.netlify.app"
     },
     {
         id: 6,
@@ -75,3 +75,4 @@ export const page2Portfolio = [
         Handle: "https://medi-care-front.netlify.app"
     }
 ];
+
