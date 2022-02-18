@@ -11,7 +11,7 @@
     padding-top: 40px;
 
     @include mobile {
-      font-size: 20px;
+      font-size: 25px;
       padding-top: 50px;
     }
   }
@@ -104,7 +104,7 @@
 
       &:hover {
         background-color: $mainColor;
-        
+
         img {
           opacity: 0.2;
           z-index: 0;
