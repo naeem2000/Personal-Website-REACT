@@ -11,15 +11,15 @@ export default function Experience() {
                         {/* HTML */}
                         <figure>
                         <img src="assets/html.png" alt="HTML" />
-                        <figcaption>75%</figcaption>
-                            <progress id="html" value="75" max="100"> </progress>
+                        <figcaption>80%</figcaption>
+                            <progress id="html" value="80" max="100"> </progress>
                         </figure>
                         
                         {/* CSS */}
                         <figure>
                         <img src="assets/css.png" alt="CSS" />
-                        <figcaption>65%</figcaption>
-                            <progress id="css" value="65" max="100">
+                        <figcaption>70%</figcaption>
+                            <progress id="css" value="70" max="100">
                             </progress>
                         </figure>
                         
@@ -36,8 +36,8 @@ export default function Experience() {
                         {/* REACT */}
                         <figure>
                             <img src="assets/react.png" alt="React.JS" />
-                            <figcaption>40%</figcaption>
-                            <progress id="react" value="40" max="100">
+                            <figcaption>50%</figcaption>
+                            <progress id="react" value="50" max="100">
                             </progress>
                         </figure>
 
@@ -60,8 +60,8 @@ export default function Experience() {
                         {/* NODE */}
                         <figure>
                         <img src="assets/node.png" alt="Node.JS" />
-                        <figcaption>30%</figcaption>
-                            <progress id="node" value="30" max="100">
+                        <figcaption>40%</figcaption>
+                            <progress id="node" value="40" max="100">
                             </progress>
                         </figure>
                     </div>

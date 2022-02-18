@@ -11,14 +11,17 @@
 
     .left {
         flex: 0.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         overflow: hidden;
-        padding-top: 80px;
-        margin-right: 100px;
+
         @include mobile {
-            margin-right: 0;
+            padding-right: 10px;
         }
 
         .imgContainer {
+            box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.548);
             width: 500px;
             height: 500px;
             background-color: crimson;
@@ -30,7 +33,8 @@
 
             @include mobile {
                 align-items: flex-start;
-                width: 400px;
+                max-width: 285px;
+                max-height: 285px;
             }
 
             img {
@@ -39,17 +43,22 @@
                 object-fit: cover;
 
                 @include mobile {
-                    height: 59%;
+                    height: 100%;
                 }
             }
         }
     }
     .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex: 0.5;
         position: relative;
         padding-right: 100px;
+        
         @include mobile {
             padding-right: 0;
+            margin-top: -80px;
         }
 
         .wrapper {
@@ -62,7 +71,10 @@
 
             @include mobile {
                 padding-left: 0;
+                display: flex;
                 align-items: center;
+                justify-content: center;
+                height: 50%;
             }
 
             h1{
@@ -70,7 +82,7 @@
                 margin: 10px 0;
 
                 @include mobile {
-                    font-size: 40px;
+                    font-size: 33px;
                 }
             }
             h2 {

@@ -1,103 +1,105 @@
 @import "../../global.scss";
 
 .contact {
-    background-color: lightblue;
+  background-color: lightblue;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .right {
+    flex: 1;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     @include mobile {
-        flex-direction: column;
+      padding-bottom: 60px;
     }
 
-    .left {
-        flex: 1;
-        overflow: hidden;
-        justify-content: center;
-        align-items: center;
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: contain;
-        }
+    h2 {
+      font-size: 50px;
+      padding-bottom: 50px;
+
+      @include mobile {
+        font-size: 20px;
+        padding-bottom: 10px;
+      }
     }
-    .right {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+
+    form {
+      width: 50%;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      background-color: rgba(0, 60, 255, 0.226);
+      border-radius: 5%;
+      padding: 20px;
+      box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.548);
+
+      @include mobile {
+        width: 300px;
+        height: 250px;
+      }
+
+      input {
+        width: 300px;
+        height: 30px;
+        font-size: 14px;
+        border: none;
 
         @include mobile {
-                padding-bottom: 60px;
-            }
-
-        h2 {
-            font-size: 50px;
-            padding-bottom: 50px;
-
-            @include mobile {
-                font-size: 20px;
-                padding-bottom: 10px;
-            }
+          width: 200px;
+          height: 20px;
         }
+      }
 
-        form {
-            width: 50%;
-            height: 60%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            background-color: rgba(0, 60, 255, 0.226);
-            border-radius: 5%;
-            padding: 20px;
+      textarea {
+        width: 300px;
+        height: 200px;
+        font-size: 14px;
+        border: none;
 
-            @include mobile {
-                width: 300px;
-                height: 250px;
-            }
-
-            input {
-                width: 300px;
-                height: 30px;
-                font-size: 14px;
-                border: none;
-
-                @include mobile {
-                    width: 200px;
-                    height: 20px;
-                }
-            }
-
-            textarea {
-                width: 300px;
-                height: 200px;
-                font-size: 14px;
-                border: none;
-
-                @include mobile {
-                    width: 200px;
-                    height: 100px;
-                }
-            }
-
-            .button {
-                width: 150px;
-                height: 30px;
-                color: white;
-                background-color: crimson;
-                border: none;
-                border-radius: 10px;
-                font-weight: 500;
-                cursor: pointer;
-
-                &:focus{
-                    outline: none;
-                }
-            }
-
-            span {
-                color: green;
-            }
+        @include mobile {
+          width: 200px;
+          height: 100px;
         }
+      }
+
+      .button {
+        width: 150px;
+        height: 30px;
+        color: white;
+        background-color: crimson;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      span {
+        color: green;
+      }
     }
+  }
 }
