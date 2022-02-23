@@ -8,7 +8,8 @@
   h1 {
     text-align: center;
     font-size: 50px;
-    padding-top: 40px;
+    padding-top: 30px;
+    height: 10.2%;
 
     @include mobile {
       font-size: 25px;
@@ -52,7 +53,7 @@
           justify-content: space-evenly;
 
           @include mobile {
-            width: 95%;
+            width:100%;
           }
 
           figure {
