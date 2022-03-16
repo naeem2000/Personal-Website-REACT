@@ -13,7 +13,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <a
               target="_blank"
               rel="noreferrer"
-              href="http://www.linkedin.com/in/mogamat-naeem-carr-6ab20a1a9/"
+              href="http://www.linkedin.com/in/mncarr"
             >
               <LinkedIn className="icon" />
               <span>LinkedIn</span>
