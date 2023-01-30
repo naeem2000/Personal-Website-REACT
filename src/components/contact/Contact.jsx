@@ -1,5 +1,7 @@
-import "./contact.scss";
+import animationData from "../lotties/116204-flying-rocket-in-the-sky.json";
 import { useForm } from "@formspree/react";
+import Lottie from "react-lottie";
+import "./contact.scss";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xdobagjw");
@@ -8,14 +10,23 @@ export default function Contact() {
     window.location.reload();
   }
 
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src="assets/shake.png" alt="" srcset="" />
+        <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
       </div>
       <div className="right">
-        <h2>Contact</h2>
         <form name="contact" onSubmit={handleSubmit}>
+          <h2>Contact</h2>
           <input type="name" name="name" placeholder="Full Name" required />
           <input type="email" name="email" placeholder="E-mail" required />
           <textarea

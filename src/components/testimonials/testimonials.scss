@@ -5,11 +5,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 
   h1 {
     text-align: center;
     font-size: 50px;
-    padding-top: 30px;
+    overflow: hidden;
+    
 
     @include mobile {
       font-size: 25px;
@@ -18,7 +20,7 @@
 
   .container {
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -30,7 +32,7 @@
     }
 
     .card {
-      width: 250px;
+      width: 20%;
       height: 70%;
       border-radius: 10px;
       box-shadow: 0px 0px 15px -8px black;
@@ -43,7 +45,8 @@
       box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.548);
 
       @include mobile {
-        height: 250px;
+        width: 70%;
+        height: 50%;
         margin: 10px 0;
       }
 
@@ -67,7 +70,7 @@
             color: blue;
 
             @include mobile {
-              font-size: 30px;
+              font-size: 40px;
             }
           }
 
@@ -80,8 +83,8 @@
               margin: 0 30px;
 
               @include mobile {
-                width: 60px;
-                height: 60px;
+                width: 80px;
+                height: 80px;
               }
             }
           }

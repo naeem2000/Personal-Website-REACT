@@ -21,60 +21,69 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: left;
 
     .slider {
-      height: 60vh;
+      height: 100%;
       display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
 
       @include mobile {
-        height: 75vh;
+        height: 100%;
+        width: 100%;
       }
 
       .container {
-        width: 100vw;
+        width: 20vw;
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        text-align: left;
 
         @include mobile {
-          padding: 25px;
+          flex-wrap: wrap;
+          padding: 10px;
+          width: 30%;
         }
 
         .item {
           box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.548);
-          width: 80%;
-          max-height: 100%;
+          width: 100vh;
+          height: max-content;
           background-color: white;
           border-radius: 20px;
-          display: flex;
-          flex-wrap: wrap;
           align-items: center;
-          justify-content: space-evenly;
+          justify-content: center;
+          margin: 20px;
+          text-align: left;
 
           @include mobile {
             width:100%;
+            margin: 0;
           }
 
           figure {
-            align-items: center;
+            font-family: sans-serif;
+            align-items: left;
             justify-content: center;
             display: flex;
             flex-direction: column;
-            padding: 20px;
-
-            @include mobile {
-              padding: 15px;
-            }
-
-            progress[value] {
-              @include mobile {
-                width: 95px;
-              }
-            }
+            padding: 20px 5px;
+            font-weight: bolder;
+            line-height: 20px;
+            font-size: 15px;
+            text-align: left;
 
             figcaption {
+              display: flex;
+              align-items: left;
+              justify-content: left;
               font-weight: 500;
+              text-align: left;
 
               @include mobile {
                 padding: 5px;
@@ -88,7 +97,8 @@
           }
 
           img {
-            width: 120px;
+            width: 60%;
+            align-self: center;
 
             @include mobile {
               width: 65px;
