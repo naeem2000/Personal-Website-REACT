@@ -1,12 +1,12 @@
+import Testimonials from "./components/testimonials/Testimonials";
+import Experience from "./components/experience/Experience";
+import Portfolio from "./components/portfolio/Portfolio";
+import Contact from "./components/contact/Contact";
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
-import Portfolio from "./components/portfolio/Portfolio";
-import Experience from "./components/experience/Experience";
-import Testimonials from "./components/testimonials/Testimonials";
-import Contact from "./components/contact/Contact";
-import "./app.scss";
-import { useState } from "react";
 import Menu from "./components/menu/Menu";
+import { useState } from "react";
+import "./app.scss";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
